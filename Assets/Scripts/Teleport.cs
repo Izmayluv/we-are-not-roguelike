@@ -58,8 +58,8 @@ public class Teleport : MonoBehaviour
             {
                 newGreenSlime = Instantiate(GreenSlime);
 
-                int x = Random.Range(-8, 8);
-                int y = Random.Range(-4, 4);
+                int x = Random.Range(-7, 7);
+                int y = Random.Range(-3, 3);
 
                 newGreenSlime.transform.position =  new Vector3(((float)Xplayer - 16) * 23 + (float)x, ((float)Yplayer - 16) * 17 + (float)y, -2);
 
@@ -84,8 +84,8 @@ public class Teleport : MonoBehaviour
             {
                 newBlueSlime = Instantiate(BlueSlime);
 
-                int x = Random.Range(-8, 8);
-                int y = Random.Range(-4, 4);
+                int x = Random.Range(-7, 7);
+                int y = Random.Range(-3, 3);
 
                 countEnemys++;
 
@@ -108,8 +108,8 @@ public class Teleport : MonoBehaviour
             {
                 newRedSlime = Instantiate(RedSlime);
 
-                int x = Random.Range(-8, 8);
-                int y = Random.Range(-4, 4);
+                int x = Random.Range(-7, 7);
+                int y = Random.Range(-3, 3);
 
                 countEnemys++;
                 
@@ -179,7 +179,7 @@ public class Teleport : MonoBehaviour
             if(Generation.rp[i,j]%100 >= 10)
             {
                 newDoorUI = Instantiate(doorUI, gridI);
-                newDoorUI.transform.position = new Vector3((i - 16) * 23, (j - 16) * 17, -4);
+                newDoorUI.transform.position = new Vector3((i - 16) * 23, (j - 16) * 17, (float)-0.5);
             }
 
             if(Generation.rp[i,j]%10 >= 1)

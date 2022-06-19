@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4882696975300078655}
   m_Layer: 6
   m_Name: TilemapDoorU
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
